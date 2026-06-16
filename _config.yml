@@ -1,8 +1,14 @@
 title: Blog di Giada Salvatori
 description: Data Architect | Database | Cloud | AI
 
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 
 plugins:
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
+
+author:
+  name: Giada Salvatori
+  bio: Data Architect | Database | Cloud | AI
+  location: Italy
