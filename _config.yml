@@ -3,6 +3,8 @@ description: Data Architect | Database | Cloud | AI
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 
+logo: "/assets/images/cloudmetrix.png"
+
 plugins:
   - jekyll-include-cache
   - jekyll-feed
