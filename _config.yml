@@ -1,0 +1,7 @@
+title: Blog di Giada Salvatori
+description: Data Architect | Database | Cloud | AI
+
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-remote-theme
