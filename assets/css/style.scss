@@ -1,8 +1,20 @@
----
----
+/* BLOCCO INFO AZIENDALE */
+.company-info {
+  margin: 60px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
 
-@import "{{ site.theme }}";
+/* HEADER PIÙ PULITO */
+.page__title {
+  display: none !important;
+}
 
+/* SFONDO GRADIENT */
 .page__hero--overlay {
-  background-color: #0e2f47 !important;
+  background: linear-gradient(90deg, #0e2f47 0%, #1c7ea4 100%);
+  padding: 60px 0 !important;
 }
