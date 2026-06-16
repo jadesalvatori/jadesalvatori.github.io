@@ -4,9 +4,5 @@ description: Data Architect | Database | Cloud | AI
 remote_theme: mmistakes/minimal-mistakes
 
 plugins:
-  - jekyll-remote-theme
-
-author:
-  name: Giada Salvatori
-  bio: Data Architect | Database | Cloud | AI
-  location: Italy
+  - jekyll-feed
+  - jekyll-seo-tag
