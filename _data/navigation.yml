@@ -4,15 +4,6 @@ main:
 
   - title: "Blog"
     url: /categories/
-    children:
-      - title: "RDBMS"
-        url: /rdbms/
-
-      - title: "AI"
-        url: /ai/
-
-      - title: "Data Analysis"
-        url: /dataanalysis/
 
   - title: "Chi siamo"
     url: /about/
