@@ -3,19 +3,25 @@
 @import "minimal-mistakes";
 
 /* ========================================= */
-/* CONTENUTO ARTICOLI (MARGINI)              */
+/* LAYOUT ARTICOLO - FIX DEFINITIVO          */
 /* ========================================= */
 
+/* restringe tutta la pagina */
 .layout--single .page {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px !important;
+  margin: 0 auto !important;
 }
 
+/* restringe il contenitore interno */
 .layout--single .page__inner-wrap {
-  padding: 0 20px;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 0 30px !important;
 }
 
+/* testo */
 .layout--single .page__content {
+  max-width: 100% !important;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -28,7 +34,8 @@
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 25px auto;
+  border-radius: 6px;
 }
 
 /* ========================================= */
@@ -37,6 +44,10 @@
 
 .page__content ul {
   margin-left: 20px;
+}
+
+.page__content li {
+  margin-bottom: 8px;
 }
 
 /* ========================================= */
@@ -48,6 +59,7 @@
   border-left: 4px solid #1fb6ff;
   padding: 10px 15px;
   border-radius: 4px;
+  font-style: normal;
 }
 
 /* ========================================= */
@@ -79,3 +91,4 @@
 .site-logo img {
   max-height: 45px;
 }
+``
