@@ -1,20 +1,49 @@
 ---
-# attiva SCSS su GitHub Pages
 ---
 
 @import "minimal-mistakes";
 
-/* ========================================= */
-/* HERO BLU SFUMATO                          */
-/* ========================================= */
+/* CONTENUTO ARTICOLI */
+
+.page__content,
+.page__inner-wrap {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+/* IMMAGINI */
+
+.page__content img {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* LISTE */
+
+.page__content ul {
+  margin-left: 20px;
+}
+
+/* BOX IMPORTANT */
+
+.page__content blockquote {
+  background: #f5f7fa;
+  border-left: 4px solid #1fb6ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* HERO */
 
 .page__hero--overlay,
 .initial-content .page__hero--overlay {
   background: linear-gradient(
     120deg,
-    #0a2540 0%,
-    #0d3b66 40%,
-    #1fb6ff 100%
+    #0a2540,
+    #0d3b66,
+    #1fb6ff
   ) !important;
 }
 
@@ -22,66 +51,13 @@
   background: transparent !important;
 }
 
-/* ========================================= */
-/* NASCONDE "jadesalvatori"                  */
-/* ========================================= */
+/* HEADER */
 
 .site-title {
   display: none !important;
 }
 
-/* ========================================= */
-/* LOGO                                      */
-/* ========================================= */
-
 .site-logo img {
   max-height: 45px;
 }
-
-/* ========================================= */
-/* CONTENUTO ARTICOLI (MARGINI)              */
-/* ========================================= */
-
-.page__content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-/* ========================================= */
-/* IMMAGINI                                  */
-/* ========================================= */
-
-.page__content img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 6px;
-}
-
-/* ========================================= */
-/* LISTE (più leggibili)                     */
-/* ========================================= */
-
-.page__content ul {
-  margin-left: 20px;
-}
-
-.page__content li {
-  margin-bottom: 8px;
-}
-
-/* ========================================= */
-/* BOX NOTE / IMPORTANT                      */
-/* ========================================= */
-
-.page__content blockquote {
-  background: #f5f7fa;
-  border-left: 4px solid #1fb6ff;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-style: normal;
-}
+``
