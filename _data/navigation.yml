@@ -3,13 +3,17 @@ main:
     url: /
 
   - title: "Blog"
-    url: /categories/
+    url: /categories/ 
+    children:
+      - title: "RDBMS"
+        url: /rdbms/
 
-  - title: "SQL Server"
-    url: /categories/#sql-server
+      - title: "AI"
+        url: /ai/
 
-  - title: "AI"
-    url: /categories/#ai
+      - title: "DataAnalysis"
+        url: /dataanalysis/
+
 
   - title: "Chi siamo"
     url: /about/
