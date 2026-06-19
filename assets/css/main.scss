@@ -3,29 +3,29 @@
 
 @import "minimal-mistakes";
 
-/* ================================================= */
-/* FIX LARGHEZZA ARTICOLI (QUESTO RISOLVE)           */
-/* ================================================= */
+/* ========================================= */
+/* FIX DEFINITIVO LARGHEZZA CONTENUTO        */
+/* ========================================= */
 
-/* restringe il container principale */
-.page {
-  max-width: 1100px !important;
-  margin: 0 auto !important;
-}
-
-/* restringe il contenuto interno */
-.page__inner-wrap {
-  max-width: 800px !important;
+/* questo è quello che ti mancava */
+.initial-content {
+  max-width: 900px !important;
   margin: 0 auto !important;
   padding: 0 30px !important;
 }
 
-/* contenuto testuale */
+/* mantieni anche questi (ma leggermente semplificati) */
+.page__inner-wrap {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
 .page__content {
   max-width: 100% !important;
   font-size: 16px;
   line-height: 1.7;
 }
+
 
 /* ================================================= */
 /* IMMAGINI                                          */
