@@ -1,11 +1,24 @@
 ---
-layout: home
-title: "Blog Cloudmetrix"
-author_profile: true
+layout: splash
+title: "Cloudmetrix Blog"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.3"
+  caption: "Data Architecture | Cloud | AI"
+  actions:
+    - label: "Scopri gli articoli"
+      url: "/categories/"
 ---
 
-Benvenuti nel mio blog tecnico.
+## Data Platform & AI Engineering
 
-📊 Database | ☁️ Cloud | 🤖 AI
+Progetto, ottimizzo e trasformo infrastrutture dati in soluzioni scalabili, sicure e performanti.
 
-Qui condivido best practice, troubleshooting e architetture reali.
+---
+
+## 🚀 Cosa troverai
+
+- SQL Server & PostgreSQL  
+- Azure & AWS  
+- AI & RAG  
+- Troubleshooting reale  
