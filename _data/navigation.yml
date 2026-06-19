@@ -3,7 +3,7 @@ main:
     url: /
 
   - title: "Blog"
-    url: /categories/ 
+    url: /categories/
     children:
       - title: "RDBMS"
         url: /rdbms/
@@ -11,9 +11,8 @@ main:
       - title: "AI"
         url: /ai/
 
-      - title: "DataAnalysis"
+      - title: "Data Analysis"
         url: /dataanalysis/
-
 
   - title: "Chi siamo"
     url: /about/
