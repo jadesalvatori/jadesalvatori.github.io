@@ -1,5 +1,5 @@
 ---
-# questo attiva SCSS su GitHub Pages
+# attiva SCSS su GitHub Pages
 ---
 
 @import "minimal-mistakes";
@@ -8,7 +8,6 @@
 /* HERO BLU SFUMATO                          */
 /* ========================================= */
 
-/* IMPORTANTISSIMO: includo anche header overlay */
 .page__hero--overlay,
 .initial-content .page__hero--overlay {
   background: linear-gradient(
@@ -19,16 +18,12 @@
   ) !important;
 }
 
-/* ========================================= */
-/* FIX: elimino eventuale overlay nero       */
-/* ========================================= */
-
 .page__hero--overlay::before {
   background: transparent !important;
 }
 
 /* ========================================= */
-/* NASCONDERE "jadesalvatori"                */
+/* NASCONDE "jadesalvatori"                  */
 /* ========================================= */
 
 .site-title {
@@ -41,4 +36,52 @@
 
 .site-logo img {
   max-height: 45px;
+}
+
+/* ========================================= */
+/* CONTENUTO ARTICOLI (MARGINI)              */
+/* ========================================= */
+
+.page__content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ========================================= */
+/* IMMAGINI                                  */
+/* ========================================= */
+
+.page__content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+/* ========================================= */
+/* LISTE (più leggibili)                     */
+/* ========================================= */
+
+.page__content ul {
+  margin-left: 20px;
+}
+
+.page__content li {
+  margin-bottom: 8px;
+}
+
+/* ========================================= */
+/* BOX NOTE / IMPORTANT                      */
+/* ========================================= */
+
+.page__content blockquote {
+  background: #f5f7fa;
+  border-left: 4px solid #1fb6ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-style: normal;
 }
