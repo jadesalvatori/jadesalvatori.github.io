@@ -1,5 +1,6 @@
 title: Blog Cloudmetrix
-description: Data Architect | Database | Cloud | AI
+
+logo: "/assets/images/cloudmetrix.png"
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 
