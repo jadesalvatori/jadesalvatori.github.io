@@ -5,6 +5,12 @@ main:
   - title: "Blog"
     url: /categories/
 
+  - title: "SQL Server"
+    url: /categories/#sql-server
+
+  - title: "AI"
+    url: /categories/#ai
+
   - title: "Chi siamo"
     url: /about/
 
