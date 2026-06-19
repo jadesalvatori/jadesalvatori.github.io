@@ -20,3 +20,6 @@ permalink: /:categories/:title/
 
 include:
   - _pages
+
+sass:
+  style: compressed
