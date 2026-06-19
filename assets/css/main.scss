@@ -1,32 +1,47 @@
 ---
 ---
-
 @import "minimal-mistakes";
 
-/* CONTENUTO ARTICOLI */
+/* ========================================= */
+/* CONTENUTO ARTICOLI (MARGINI)              */
+/* ========================================= */
 
-.page__content,
-.page__inner-wrap {
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 0 20px !important;
+.layout--single .page {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* IMMAGINI */
+.layout--single .page__inner-wrap {
+  padding: 0 20px;
+}
+
+.layout--single .page__content {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ========================================= */
+/* IMMAGINI                                  */
+/* ========================================= */
 
 .page__content img {
   max-width: 100%;
+  height: auto;
   display: block;
   margin: 20px auto;
 }
 
-/* LISTE */
+/* ========================================= */
+/* LISTE                                     */
+/* ========================================= */
 
 .page__content ul {
   margin-left: 20px;
 }
 
-/* BOX IMPORTANT */
+/* ========================================= */
+/* BOX IMPORTANT                             */
+/* ========================================= */
 
 .page__content blockquote {
   background: #f5f7fa;
@@ -35,7 +50,9 @@
   border-radius: 4px;
 }
 
-/* HERO */
+/* ========================================= */
+/* HERO                                      */
+/* ========================================= */
 
 .page__hero--overlay,
 .initial-content .page__hero--overlay {
@@ -51,7 +68,9 @@
   background: transparent !important;
 }
 
-/* HEADER */
+/* ========================================= */
+/* HEADER                                    */
+/* ========================================= */
 
 .site-title {
   display: none !important;
@@ -60,4 +79,3 @@
 .site-logo img {
   max-height: 45px;
 }
-``
