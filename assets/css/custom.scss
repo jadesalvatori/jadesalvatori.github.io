@@ -1,60 +1,27 @@
 ---
 ---
 
-/* ===================================== */
-/* HERO (BANNER) SFONDO BLU SFUMATO      */
-/* ===================================== */
+/* DEBUG: se questo funziona la pagina diventa rossa */
+body {
+  background: red !important;
+}
 
-body.layout--splash .page__hero--overlay {
+/* HERO BLU SFUMATO */
+.page__hero--overlay {
   background: linear-gradient(
     120deg,
-    #0a2540 0%,
-    #0d3b66 40%,
-    #1fb6ff 100%
+    #0a2540,
+    #0d3b66,
+    #1fb6ff
   ) !important;
 }
 
-/* ===================================== */
-/* RIMUOVO TESTO ACCANTO AL LOGO         */
-/* ===================================== */
-
+/* NASCONDE TESTO JADESALVATORI */
 .site-title {
   display: none !important;
 }
 
-/* ===================================== */
-/* DIMENSIONE LOGO (PIÙ PROFESSIONALE)   */
-/* ===================================== */
-
+/* LOGO PIÙ BELLO */
 .site-logo img {
   max-height: 45px;
-}
-
-/* ===================================== */
-/* SISTEMA SPAZI HEADER                  */
-/* ===================================== */
-
-.site-header {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/* ===================================== */
-/* BOTTONE HERO (più moderno)            */
-/* ===================================== */
-
-.page__hero--overlay .btn {
-  border-radius: 6px;
-  padding: 10px 20px;
-  border: 1px solid white;
-}
-
-/* ===================================== */
-/* TESTO HERO PIÙ ELEGANTE               */
-/* ===================================== */
-
-.page__hero--overlay h1,
-.page__hero--overlay h2,
-.page__hero--overlay h3 {
-  font-weight: 600;
 }
