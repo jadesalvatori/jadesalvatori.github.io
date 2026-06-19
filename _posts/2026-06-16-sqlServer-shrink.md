@@ -5,7 +5,10 @@ categories: [SQL Server]
 tags: [performance, tuning]
 ---
 
-# Shrink
+# SQL Server shrink
+
+> **IMPORTANTE**
+> Non usare lo shrink...
 
 Lo shrink dei file ha l'obbiettivo di liberare lo spazio FISICO utilizzato dai file del database; più chiaramente si potrebbe pensare di effettuare un operazione di questo tipo nel momento in cui mi trovo in una situazione in cui vedo che il mio file: .mdf, .ldf o .ndf occupa una determinata quantità di spazio ma in relatà ne sta effettivamente utilizzando molto di meno.
 
