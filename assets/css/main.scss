@@ -4,17 +4,20 @@
 @import "minimal-mistakes";
 
 /* ========================================= */
-/* LARGHEZZA CONTENUTO (COME DEVTOOLS)       */
+/* SOLO ARTICOLI (NON tutte le pagine)       */
 /* ========================================= */
 
-body.layout--single .initial-content,
-body.layout--single .search-content {
+body.layout--single.post-layout .initial-content,
+body.layout--single.post-layout .search-content {
   max-width: 700px !important;
   margin: 0 auto !important;
   padding: 0 20px !important;
 }
 
-/* CONTENUTO TESTO */
+/* ========================================= */
+/* TESTO                                     */
+/* ========================================= */
+
 .page__content {
   font-size: 17px;
   line-height: 1.8;
@@ -85,4 +88,3 @@ body.layout--single .search-content {
 .site-logo img {
   max-height: 45px;
 }
-``
