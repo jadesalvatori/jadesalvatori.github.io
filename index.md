@@ -6,6 +6,7 @@ header:
   actions:
     - label: "Scopri gli articoli"
       url: "/categories/"
+  caption: ""
 ---
 
 
