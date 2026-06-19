@@ -4,7 +4,8 @@ title: "Contatti"
 permalink: /contact/
 ---
 
+**Cloudmetrix S.r.l**
 📍 Via E. Salgari, 17 - Modena  
-📧 cloudmetrix@pec.net  
+📧 info@cloudmetrix.it
 ☎ +39 059380198  
 ``
