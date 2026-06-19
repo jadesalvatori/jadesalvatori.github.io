@@ -4,24 +4,20 @@
 @import "minimal-mistakes";
 
 /* ========================================= */
-/* FIX LARGHEZZA CONTENUTO (QUELLO CHE SERVE)*/
+/* LARGHEZZA CONTENUTO (COME DEVTOOLS)       */
 /* ========================================= */
 
-.initial-content {
-  max-width: 900px !important;
+body.layout--single .initial-content,
+body.layout--single .search-content {
+  max-width: 700px !important;
   margin: 0 auto !important;
-  padding: 0 30px !important;
+  padding: 0 20px !important;
 }
 
-.page__inner-wrap {
-  max-width: 800px !important;
-  margin: 0 auto !important;
-}
-
+/* CONTENUTO TESTO */
 .page__content {
-  max-width: 100% !important;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 /* ========================================= */
@@ -33,6 +29,7 @@
   height: auto;
   display: block;
   margin: 25px auto;
+  border-radius: 6px;
 }
 
 /* ========================================= */
@@ -41,6 +38,10 @@
 
 .page__content ul {
   margin-left: 20px;
+}
+
+.page__content li {
+  margin-bottom: 8px;
 }
 
 /* ========================================= */
@@ -84,3 +85,4 @@
 .site-logo img {
   max-height: 45px;
 }
+``
