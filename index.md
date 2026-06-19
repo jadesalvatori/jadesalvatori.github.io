@@ -2,9 +2,7 @@
 layout: splash
 title: "Home"
 header:
-  overlay_color: "#000"
   overlay_filter: "0.3"
-  caption: "Data Architecture | Cloud | AI"
   actions:
     - label: "Scopri gli articoli"
       url: "/categories/"
