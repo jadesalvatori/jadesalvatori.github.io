@@ -2,6 +2,8 @@
 layout: splash
 title: "Home"
 header:
+  overlay_image: /assets/images/hero-bg.png
+  overlay_filter: 0
   actions:
     - label: "Scopri gli articoli"
       url: "/categories/"
