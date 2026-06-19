@@ -1,23 +1,21 @@
 title: Blog Cloudmetrix
 description: Data Architect | Database | Cloud | AI
+
 remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 author:
   name: Giada Salvatori
 
-# lingua
 locale: it-IT
 
-# layout homepage
 minimal_mistakes_skin: "default"
 search: true
 
-# permalink articoli
 permalink: /:categories/:title/
 
-# navigation
 include:
   - _pages
