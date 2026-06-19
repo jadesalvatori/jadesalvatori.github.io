@@ -1,9 +1,25 @@
 ---
-layout: single
 title: "Il mio primo articolo"
-date: 2026-06-16
-categories: [Database, Azure]
+date: 2026-06-19
+categories: [SQL Server]
+tags: [performance, tuning]
 ---
 
-Benvenuti nel mio blog!
-``
+## Introduzione
+
+Questo è il mio primo articolo del blog.
+
+## Obiettivo
+
+In questo articolo vediamo come ottimizzare SQL Server.
+
+## Contenuto
+
+Scrivi qui tutto quello che vuoi:
+- spiegazioni
+- esempi
+- codice
+
+## Conclusione
+
+Riassunto finale dell’articolo.
