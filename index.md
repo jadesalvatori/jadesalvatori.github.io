@@ -2,11 +2,9 @@
 layout: splash
 title: "Home"
 header:
-  overlay_filter: "0.3"
   actions:
     - label: "Scopri gli articoli"
       url: "/categories/"
-  caption: ""
 ---
 
 
