@@ -1,11 +1,60 @@
 ---
 ---
 
+/* ===================================== */
+/* HERO (BANNER) SFONDO BLU SFUMATO      */
+/* ===================================== */
+
 body.layout--splash .page__hero--overlay {
   background: linear-gradient(
     120deg,
-    #0b2d4d,
-    #0f4c75,
-    #1aa7d1
+    #0a2540 0%,
+    #0d3b66 40%,
+    #1fb6ff 100%
   ) !important;
+}
+
+/* ===================================== */
+/* RIMUOVO TESTO ACCANTO AL LOGO         */
+/* ===================================== */
+
+.site-title {
+  display: none !important;
+}
+
+/* ===================================== */
+/* DIMENSIONE LOGO (PIÙ PROFESSIONALE)   */
+/* ===================================== */
+
+.site-logo img {
+  max-height: 45px;
+}
+
+/* ===================================== */
+/* SISTEMA SPAZI HEADER                  */
+/* ===================================== */
+
+.site-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* ===================================== */
+/* BOTTONE HERO (più moderno)            */
+/* ===================================== */
+
+.page__hero--overlay .btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+/* ===================================== */
+/* TESTO HERO PIÙ ELEGANTE               */
+/* ===================================== */
+
+.page__hero--overlay h1,
+.page__hero--overlay h2,
+.page__hero--overlay h3 {
+  font-weight: 600;
 }
