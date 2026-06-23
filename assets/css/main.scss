@@ -101,6 +101,13 @@
 /* ========================================= */
 /* BLOG CARD GRID (pagina /categories/)      */
 /* ========================================= */
+.blog-grid-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .blog-grid-category-title {
   margin-top: 2.5em;
   display: flex;
@@ -119,15 +126,9 @@
 
 .blog-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 320px));
   gap: 1.5em;
   margin: 1.5em 0 2em 0;
-}
-
-@media (max-width: 900px) {
-  .blog-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 600px) {
