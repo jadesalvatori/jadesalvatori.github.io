@@ -5,7 +5,7 @@ categories: [SQL Server]
 tags: [performance, tuning]
 classes: article
 layout: single
-
+feedback: true
 ---
 
 # SQL Server shrink
