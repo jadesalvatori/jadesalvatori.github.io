@@ -11,20 +11,6 @@
 }
 
 /* ========================================= */
-/* HEADER                                    */
-/* ========================================= */
-.masthead {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
-}
-
-.masthead__inner-wrap {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-}
-
-
-/* ========================================= */
 /* HERO                                      */
 /* ========================================= */
 
@@ -53,6 +39,25 @@
 .site-logo img {
   max-height: 45px;
 }
+
+.masthead {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.masthead__inner-wrap {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* ========================================= */
+/* BODY                                  */
+/* ========================================= */
+
+.initial-content {
+  text-align: center;
+}
+
 
 /* ========================================= */
 /* FEEDBACK                                    */
