@@ -1,8 +1,8 @@
 ---
-title: "SQL Server: cosa succede realmente durante lo shrink di un data file"
+title: "Intelligenza artificiale: Pipeline vs Agent"
 date: 2026-06-19
 categories: [AI, General]
-tags: [teria, agent, pipeline]
+tags: [teoria, agent, pipeline]
 classes: article
 layout: single
 feedback: true
