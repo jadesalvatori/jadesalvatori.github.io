@@ -55,9 +55,13 @@
 /* ========================================= */
 
 .initial-content {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.layout--archive .initial-content {
+  max-width: 900px;
+}
 
 /* ========================================= */
 /* FEEDBACK                                    */
