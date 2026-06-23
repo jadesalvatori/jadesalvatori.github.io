@@ -91,7 +91,7 @@ Una volta effettuato io controllo e visto che mie VFLs sono a 0 posso procedere.
 ATTENZIONE :exclamation: effettuare sempre lo shrink dei file specifici non dell'interno database
 
 
-<img width="733" height="346" alt="image" src="/assets/images/20260623sqlshrink/sqlshrink4.png" />
+<img width="733" height="346" alt="image" src="/assets/images/20260623sqlshrink/sqlshirnk4.png" />
 
 Oppure con il comando TSQL
 ```sql
