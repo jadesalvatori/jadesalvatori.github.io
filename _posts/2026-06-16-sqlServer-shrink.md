@@ -6,6 +6,8 @@ tags: [performance, tuning]
 classes: article
 layout: single
 feedback: true
+header:
+  teaser: /assets/images/20260623sqlshrink/sqlshrinkk1.png
 ---
 
 # SQL Server shrink
