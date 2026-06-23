@@ -2,7 +2,7 @@
 title: "SQL Server: cosa succede realmente durante lo shrink di un data file"
 date: 2026-06-19
 categories: [Data, SQL Server]
-tags: [performance, tuning]
+tags: [performance, tuning, SQLServer]
 classes: article
 layout: single
 feedback: true
