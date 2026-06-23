@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL: quanto ci dobbiamo preoccupare delle dead tuple"
+title: "PostgreSQL: Out of Memory"
 date: 2026-06-19
 categories: [PostgreSQL]
 tags: [performance, tuning, OOM]
