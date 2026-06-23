@@ -7,19 +7,40 @@ layout: default
   {{ content }}
 
   {% comment %}
-    Raggruppamento semplice: usa SOLO la prima categoria di ogni post
-    (post.categories[0]) come criterio di raggruppamento.
-    Eventuali categorie aggiuntive vengono comunque mostrate come
-    etichette dentro la card, ma non creano gruppi/sezioni separate.
+    Raggruppamento per categories[0] (categoria principale).
+    In più: raccoglie tutte le categorie e tag distinti di tutti i post
+    per generare la barra dei filtri in cima alla pagina.
   {% endcomment %}
 
   {% assign mainCategories = "" | split: "," %}
+  {% assign allFilters = "" | split: "," %}
+
   {% for post in site.posts %}
     {% assign mainCat = post.categories[0] %}
     {% unless mainCategories contains mainCat %}
       {% assign mainCategories = mainCategories | push: mainCat %}
     {% endunless %}
+
+    {% for cat in post.categories %}
+      {% unless allFilters contains cat %}
+        {% assign allFilters = allFilters | push: cat %}
+      {% endunless %}
+    {% endfor %}
+    {% for tag in post.tags %}
+      {% assign tagFilter = "#" | append: tag %}
+      {% unless allFilters contains tagFilter %}
+        {% assign allFilters = allFilters | push: tagFilter %}
+      {% endunless %}
+    {% endfor %}
   {% endfor %}
+
+  <div class="blog-filter-bar">
+    <span class="blog-filter-label">Filtra:</span>
+    <button type="button" class="blog-filter-pill blog-filter-active" data-filter="all">Tutti</button>
+    {% for f in allFilters %}
+      <button type="button" class="blog-filter-pill" data-filter="{{ f }}">{{ f }}</button>
+    {% endfor %}
+  </div>
 
   {% for mainCat in mainCategories %}
 
@@ -30,16 +51,24 @@ layout: default
       {% endif %}
     {% endfor %}
 
-    <h2 class="blog-grid-main-category-title" id="{{ mainCat | slugify }}">
+    <h2 class="blog-grid-main-category-title" id="{{ mainCat | slugify }}" data-section-for="{{ mainCat }}">
       {{ mainCat }}
       <span class="blog-grid-count">{{ catCount }}</span>
     </h2>
 
-    <div class="blog-card-grid">
+    <div class="blog-card-grid" data-section-grid-for="{{ mainCat }}">
       {% for post in site.posts %}
         {% if post.categories[0] == mainCat %}
 
-          <article class="blog-card">
+          {% assign cardFilters = "" | split: "," %}
+          {% for cat in post.categories %}
+            {% assign cardFilters = cardFilters | push: cat %}
+          {% endfor %}
+          {% for tag in post.tags %}
+            {% assign cardFilters = cardFilters | push: "#" | append: tag %}
+          {% endfor %}
+
+          <article class="blog-card" data-filters="{{ cardFilters | join: '|' }}">
 
             <a href="{{ post.url | relative_url }}" class="blog-card-image-link">
               {% if post.header.teaser %}
@@ -90,3 +119,69 @@ layout: default
   {% endfor %}
 
 </div>
+
+<script>
+(function () {
+  var activeFilters = new Set(["all"]);
+
+  var pills = document.querySelectorAll(".blog-filter-pill");
+  var cards = document.querySelectorAll(".blog-card");
+  var sectionTitles = document.querySelectorAll("[data-section-for]");
+  var sectionGrids = document.querySelectorAll("[data-section-grid-for]");
+
+  function applyFilters() {
+    var showAll = activeFilters.has("all") || activeFilters.size === 0;
+
+    cards.forEach(function (card) {
+      var cardTags = (card.getAttribute("data-filters") || "").split("|");
+      var match = showAll || cardTags.some(function (t) { return activeFilters.has(t); });
+      card.style.display = match ? "" : "none";
+    });
+
+    sectionGrids.forEach(function (grid) {
+      var visibleCount = Array.prototype.filter.call(
+        grid.querySelectorAll(".blog-card"),
+        function (c) { return c.style.display !== "none"; }
+      ).length;
+
+      var sectionName = grid.getAttribute("data-section-grid-for");
+      var title = document.querySelector('[data-section-for="' + sectionName + '"]');
+
+      grid.style.display = visibleCount === 0 ? "none" : "";
+      if (title) {
+        title.style.display = visibleCount === 0 ? "none" : "";
+      }
+    });
+  }
+
+  pills.forEach(function (pill) {
+    pill.addEventListener("click", function () {
+      var filter = pill.getAttribute("data-filter");
+
+      if (filter === "all") {
+        activeFilters = new Set(["all"]);
+        pills.forEach(function (p) { p.classList.remove("blog-filter-active"); });
+        pill.classList.add("blog-filter-active");
+      } else {
+        activeFilters.delete("all");
+        document.querySelector('.blog-filter-pill[data-filter="all"]').classList.remove("blog-filter-active");
+
+        if (activeFilters.has(filter)) {
+          activeFilters.delete(filter);
+          pill.classList.remove("blog-filter-active");
+        } else {
+          activeFilters.add(filter);
+          pill.classList.add("blog-filter-active");
+        }
+
+        if (activeFilters.size === 0) {
+          activeFilters.add("all");
+          document.querySelector('.blog-filter-pill[data-filter="all"]').classList.add("blog-filter-active");
+        }
+      }
+
+      applyFilters();
+    });
+  });
+})();
+</script>
