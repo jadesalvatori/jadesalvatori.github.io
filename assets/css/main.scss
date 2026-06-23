@@ -7,19 +7,27 @@
 /* LAYOUT GENERALE (FIX CENTRATURA GLOBALE) */
 /* ========================================= */
 
-.layout--single .initial-content,
-.layout--default .initial-content {
-  max-width: 900px;
+/* ARTICOLI → più stretti (leggibilità) */
+.layout--single .initial-content {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.layout--archive .initial-content {
+/* PAGINE (chi siamo, contatti) → più larghe */
+.layout--default .initial-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HOMEPAGE → ancora più larga */
+.layout--splash .initial-content {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.layout--splash .initial-content {
-  max-width: 1000px;
+/* CATEGORIE / BLOG → molto larga */
+.layout--archive .initial-content {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
