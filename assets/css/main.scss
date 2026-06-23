@@ -2,6 +2,13 @@
 ---
 
 @import "minimal-mistakes";
+/* ========================================= */
+/* SOLO ARTICOLI (FIX GIUSTO)                */
+/* ========================================= */
+.article .initial-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
 /* ========================================= */
 /* HERO                                      */
