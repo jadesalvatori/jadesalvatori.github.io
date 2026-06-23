@@ -2,25 +2,21 @@
 layout: default
 ---
 
-<div class="page__content">
+{{ content }}
 
-  {{ content }}
-
-  <!-- FEEDBACK -->
-  <div class="feedback-box">
-    <p><strong>💬 Ti è stato utile questo articolo?</strong></p>
-    
-    <a href="https://github.com/jadesalvatori/jadesalvatori.github.io/issues/new?title=Feedback:+👍+{{ page.title }}">
-      👍 Sì
-    </a>
-    
-    &nbsp; | &nbsp;
-    
-    <a href="https://github.com/jadesalvatori/jadesalvatori.github.io/issues/new?title=Feedback:+👎+{{ page.title }}">
-      👎 No
-    </a>
-
-  </div>
-
+{% if page.feedback == true %}
+<!-- FEEDBACK -->
+<div class="feedback-box">
+  <p><strong>💬 Ti è stato utile questo articolo?</strong></p>
+  
+  <a href="https://github.com/jadesalvatori/jadesalvatori.github.io/issues/new?title=Feedback:+👍+{{ page.title }}">
+    👍 Sì
+  </a>
+  
+  &nbsp; | &nbsp;
+  
+  <a href="https://github.com/jadesalvatori/jadesalvatori.github.io/issues/new?title=Feedback:+👎+{{ page.title }}">
+    👎 No
+  </a>
 </div>
-``
+{% endif %}
