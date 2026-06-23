@@ -52,7 +52,7 @@ Un'altro punto che consigliamo in questa attività è di controllare authogrowth
 - troppo bassa, quindi in caso di crescita l'operazione andrà effettuata più volte;
 - troppo alta, che comporta dello spazio allocato ma non utilizzato.
   
-<img width="1079" height="112" alt="image" src="https://github.com/user-attachments/assets/38d8d4bc-4c64-4470-9e61-21dae9c22b8f" />
+<img width="1079" height="112" alt="image" src="/assets/images/20260623sqlshrink/sqlshrink2.png" />
 
 Si consiglia solitamente di partire:
 - file dati sui 256MB;
@@ -84,14 +84,14 @@ DBCC LOGINFO;
 vlf_status può avere valori come 0 = inactive, 1 = initialized but unused, 2 = active.
 Solo i VLF inattivi possono essere liberati da uno shrink.
 
-<img width="484" height="195" alt="image" src="https://github.com/user-attachments/assets/8485b4c4-7a8b-411e-858f-b51bd1d8f747" />
+<img width="484" height="195" alt="image" src="/assets/images/20260623sqlshrink/sqlshrink3.png" />
 
 Una volta effettuato io controllo e visto che mie VFLs sono a 0 posso procedere.
 
 ATTENZIONE :exclamation: effettuare sempre lo shrink dei file specifici non dell'interno database
 
 
-<img width="733" height="346" alt="image" src="https://github.com/user-attachments/assets/1832f706-d881-4232-b845-21c18cf07536" />
+<img width="733" height="346" alt="image" src="/assets/images/20260623sqlshrink/sqlshrink4.png" />
 
 Oppure con il comando TSQL
 ```sql
