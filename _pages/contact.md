@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "Contatti"
+title: Contatti
 permalink: /contact/
 ---
 
-**Cloudmetrix S.r.l**
+## Cloudmetrix S.r.l
+
 <table class="contact-table">
   <tr>
     <td>📍</td>
@@ -23,16 +24,17 @@ permalink: /contact/
   </tr>
 </table>
 
+---
+
 ## 📍 Dove siamo
 
 <div class="map-container">
   <iframe 
     src="https://www.google.com/maps?q=Via+E.+Salgari+17,+Modena&output=embed"
     width="100%" 
-    height="450" 
+    height="450"
     style="border:0;" 
     allowfullscreen="" 
     loading="lazy">
   </iframe>
 </div>
-``
