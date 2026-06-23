@@ -2,7 +2,7 @@
 title: "PostgreSQL: Out of Memory"
 date: 2026-06-19
 categories: [Data, PostgreSQL]
-tags: [performance, tuning, OOM]
+tags: [performance, tuning, OOM, PostgreSQL]
 classes: article
 layout: single
 feedback: true
