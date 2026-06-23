@@ -1,8 +1,8 @@
 ---
 title: "PostgreSQL: quanto ci dobbiamo preoccupare delle dead tuple"
 date: 2026-06-19
-categories: [PostgreSQL]
-tags: [performance, tuning]
+categories: [Data, PostgreSQL]
+tags: [performance, tuning, PostgreSQL]
 classes: article
 layout: single
 feedback: true
