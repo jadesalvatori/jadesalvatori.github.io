@@ -1,50 +1,38 @@
 ---
 ---
-
 @import "minimal-mistakes";
-
 /* ========================================= */
 /* LAYOUT - VERSIONE DEFINITIVA              */
 /* ========================================= */
-
 /* ARTICOLI */
 .layout--single .initial-content {
   max-width: 900px;
   margin: 0 auto;
 }
-
 /* PAGINE (chi siamo, contatti) */
 .layout--default .initial-content {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 /* HOMEPAGE (LASCIATA LARGA) */
 .layout--splash .initial-content {
   max-width: none; /* ✅ FIX corretto */
 }
-
 /* BLOG / ARCHIVE */
 .layout--archive .initial-content {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-
 /* ========================================= */
 /* SOLO ARTICOLI                             */
 /* ========================================= */
-
 .article .initial-content {
   padding-left: 40px;
   padding-right: 40px;
 }
-
-
 /* ========================================= */
 /* HERO                                      */
 /* ========================================= */
-
 .page__hero--overlay,
 .initial-content .page__hero--overlay {
   background: linear-gradient(
@@ -54,7 +42,6 @@
     #1fb6ff
   ) !important;
 }
-
 .page__hero--overlay::before {
   background: transparent !important;
 }
@@ -77,34 +64,26 @@
   width: 100% !important;
   border: 0;
 }
-
 /* ========================================= */
 /* HEADER                                    */
 /* ========================================= */
-
 .site-title {
   display: none !important;
 }
-
 .site-logo img {
   max-height: 45px;
 }
-
 .masthead {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
 }
-
 .masthead__inner-wrap {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
-
-
 /* ========================================= */
 /* FEEDBACK                                  */
 /* ========================================= */
-
 .feedback-box {
   max-width: 800px;
   margin: 50px auto;
@@ -114,9 +93,128 @@
   border-radius: 8px;
   text-align: center;
 }
-
 .feedback-box a {
   font-weight: bold;
   margin: 0 10px;
   text-decoration: none;
+}
+/* ========================================= */
+/* BLOG CARD GRID (pagina /categories/)      */
+/* ========================================= */
+.blog-grid-category-title {
+  margin-top: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.blog-grid-count {
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #767676;
+  background: #f0f0f0;
+  border-radius: 1em;
+  padding: 0.15em 0.7em;
+}
+
+.blog-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin: 1.5em 0 2em 0;
+}
+
+@media (max-width: 900px) {
+  .blog-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card-image-link {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #eee;
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card-body {
+  padding: 1em 1.2em 1.2em 1.2em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-card-title {
+  margin: 0 0 0.4em 0;
+  font-size: 1.05em;
+}
+
+.blog-card-title a {
+  text-decoration: none;
+}
+
+.blog-card-excerpt {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 0 0.8em 0;
+  flex-grow: 1;
+}
+
+.blog-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  margin-top: auto;
+}
+
+.blog-card-categories,
+.blog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.blog-pill {
+  font-size: 0.75em;
+  padding: 0.2em 0.7em;
+  border-radius: 1em;
+  white-space: nowrap;
+}
+
+.blog-pill-category {
+  background: #2980b9;
+  color: #fff;
+}
+
+.blog-pill-tag {
+  background: #ecf0f1;
+  color: #555;
 }
