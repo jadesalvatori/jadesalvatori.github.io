@@ -4,4 +4,3 @@ layout: archive
 permalink: /ai/
 taxonomy: ai
 ---
-``
