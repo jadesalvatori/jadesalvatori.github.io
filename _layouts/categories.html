@@ -35,7 +35,9 @@ layout: default
           <div class="blog-card-body">
 
             <h4 class="blog-card-title">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
             </h4>
 
             {% if post.excerpt %}
