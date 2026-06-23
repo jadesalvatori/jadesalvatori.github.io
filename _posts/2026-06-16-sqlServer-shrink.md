@@ -4,6 +4,8 @@ date: 2026-06-19
 categories: [SQL Server]
 tags: [performance, tuning]
 classes: article
+layout: single
+
 ---
 
 # SQL Server shrink
