@@ -43,15 +43,16 @@
 /* ========================================= */
 /* FEEDBACK                                    */
 /* ========================================= */
-
 .feedback-box {
-  margin-top: 60px;
+  max-width: 800px;
+  margin: 50px auto; 
   padding: 20px;
   border: 1px solid #ddd;
   background: #f7f9fb;
   border-radius: 8px;
   text-align: center;
 }
+
 
 .feedback-box a {
   font-weight: bold;
