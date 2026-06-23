@@ -12,10 +12,11 @@ header:
 
 ## 🚀 Cosa troverai
 
-In questo Blog troverai tutti i nostri articoli dove andremo a toccare argomenti che partono dal mondo database (RDBMS, Data Warehouse, NoSQL), Data Platform, Data Analysis e Intelligenza Artificiale; assieme anche ai vari casi d'uso sui nostri clienti.
+Questo blog nasce con l’obiettivo di condividere esperienze, metodologie e soluzioni applicate nel mondo dei dati, coprendo diversi ambiti tra cui database(RDBMS, DataWarehouse e NoSQL), Data Governance, Data Platform, Data Analysis e Intelligenza Artificiale, con un focus su architetture dati moderne, scenari enterprise e integrazione con tecnologie emergenti.
 
-Il nostro obbiettivo è quello di mostrare ai nostri lettori come con il nostro lavoro cerchiamo di ottimizzare le infrastrutture dati dei nostri clienti rendendole: 
-- sicure
-- robuste
-- performanti
-sfruttando sempre le nuove tecnologie in base alle loro necessità.
+I contenuti saranno di natura tecnica e derivano sia da esperienze reali maturate su ambienti di produzione, sia da casi studio sviluppati per analizzare nuove tecnologie e i relativi contesti applicativi.
+
+L’obiettivo è fornire una visione concreta di come progettiamo e ottimizziamo gli ambienti dati, affrontando requisiti complessi in termini di scalabilità, sicurezza e performance, e proponendo di volta in volta l’approccio più adatto in base alle specifiche esigenze.
+
+Questo blog rappresenta quindi un punto di incontro tra **approccio tecnico-operativo e visione strategica**, con l’obiettivo di trasformare i dati in un asset concreto e misurabile per le aziende.
+
