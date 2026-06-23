@@ -13,7 +13,7 @@ classes: article
 
 Lo shrink dei file ha l'obbiettivo di liberare lo spazio FISICO utilizzato dai file del database; più chiaramente si potrebbe pensare di effettuare un operazione di questo tipo nel momento in cui mi trovo in una situazione in cui vedo che il mio file: .mdf, .ldf o .ndf occupa una determinata quantità di spazio ma in relatà ne sta effettivamente utilizzando molto di meno.
 
-<img width="811" height="217" alt="image" src="https://github.com/user-attachments/assets/fdae3fbb-c5fb-4fdf-954c-9779f0cf515a" />
+<img width="811" height="217" alt="image" src="/assets/images/20260623sqlshrink/sqlshrinkk1.png" />
 
 Vediamo un esempio sopra, dove vediamo in particolare che il Transaction Log ha tutto il suo spazio libero a disposizione. Attenzione, che però questa situazione è comune per questa tipologia di file.
 
