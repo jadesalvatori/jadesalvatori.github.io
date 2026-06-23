@@ -3,7 +3,7 @@ main:
     url: /
 
   - title: "Blog"
-    url: /categories/
+    url: /blog/
 
   - title: "Chi siamo"
     url: /about/
