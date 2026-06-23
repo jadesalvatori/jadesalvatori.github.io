@@ -22,6 +22,16 @@ permalink: /contact/
     <td><strong>Telefono:</strong></td>
     <td>+39 059380198</td>
   </tr>
+  <tr>
+   <td>📨</td>
+   <td><strong>Pec:</strong></td>
+   <td>cloudmetrix@pec.net</td>
+  </tr>
+  <tr>
+   <td>🌐</td>
+   <td><strong>sito:</strong></td>
+   <td><a href="https://www.cloudmetrix.it/" target="_blank">www.cloudmetrix.it</a></td>
+  </tr>
 </table>
 
 ---
@@ -32,7 +42,7 @@ permalink: /contact/
   <iframe 
     src="https://www.google.com/maps?q=Via+E.+Salgari+17,+Modena&output=embed"
     width="100%" 
-    height="450"
+    height="600"
     style="border:0;" 
     allowfullscreen="" 
     loading="lazy">
