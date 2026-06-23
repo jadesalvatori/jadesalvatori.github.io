@@ -1,7 +1,7 @@
 ---
 title: "Intelligenza artificiale: Pipeline vs Agent"
 date: 2026-06-19
-categories: [AI, General]
+categories: [data, ai]
 tags: [teoria, agent, pipeline]
 classes: article
 layout: single
