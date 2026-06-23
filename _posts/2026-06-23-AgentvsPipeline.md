@@ -7,7 +7,7 @@ classes: article
 layout: single
 feedback: true
 header:
-  teaser: intelligenza-artificiale-spiegabile-xai.png
+  teaser: assets/images/intelligenza-artificiale-spiegabile-xai.png
 ---
 
 # Pipeline vs Agent AI
