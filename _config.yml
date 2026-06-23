@@ -9,6 +9,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-feed
 
 author:
   name: Giada Salvatori
