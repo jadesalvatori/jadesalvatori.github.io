@@ -2,13 +2,35 @@
 ---
 
 @import "minimal-mistakes";
+
 /* ========================================= */
-/* SOLO ARTICOLI (FIX GIUSTO)                */
+/* LAYOUT GENERALE (FIX CENTRATURA GLOBALE) */
 /* ========================================= */
+
+/* Tutti i layout (IMPORTANTISSIMO) */
+.layout--single .initial-content,
+.layout--archive .initial-content,
+.layout--default .initial-content,
+.layout--splash .initial-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Variante archive leggermente più larga */
+.layout--archive .initial-content {
+  max-width: 900px;
+}
+
+
+/* ========================================= */
+/* SOLO ARTICOLI                             */
+/* ========================================= */
+
 .article .initial-content {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 
 /* ========================================= */
 /* HERO                                      */
@@ -27,6 +49,7 @@
 .page__hero--overlay::before {
   background: transparent !important;
 }
+
 
 /* ========================================= */
 /* HEADER                                    */
@@ -50,25 +73,14 @@
   padding-bottom: 5px !important;
 }
 
-/* ========================================= */
-/* BODY                                  */
-/* ========================================= */
-
-.initial-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.layout--archive .initial-content {
-  max-width: 900px;
-}
 
 /* ========================================= */
-/* FEEDBACK                                    */
+/* FEEDBACK                                  */
 /* ========================================= */
+
 .feedback-box {
   max-width: 800px;
-  margin: 50px auto; 
+  margin: 50px auto;
   padding: 20px;
   border: 1px solid #ddd;
   background: #f7f9fb;
@@ -76,10 +88,9 @@
   text-align: center;
 }
 
-
 .feedback-box a {
   font-weight: bold;
   margin: 0 10px;
   text-decoration: none;
 }
-
+``
