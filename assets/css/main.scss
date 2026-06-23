@@ -7,27 +7,26 @@
 /* LAYOUT GENERALE (FIX CENTRATURA GLOBALE) */
 /* ========================================= */
 
-/* ARTICOLI → più stretti (leggibilità) */
+/* ARTICOLI */
 .layout--single .initial-content {
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
-/* PAGINE (chi siamo, contatti) → più larghe */
+/* PAGINE (chi siamo, contatti) */
 .layout--default .initial-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* HOMEPAGE → ancora più larga */
-.layout--splash .initial-content {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* CATEGORIE / BLOG → molto larga */
+/* HOMEPAGE (IMPORTANTE per hero) */
+.layout--splash .initial-content {
+  max-width: NONE;   /* 👈 QUESTO è il FIX CHIAVE */
+}
+
+/* BLOG / ARCHIVE */
 .layout--archive .initial-content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
