@@ -4,12 +4,12 @@
 @import "minimal-mistakes";
 
 /* ========================================= */
-/* LAYOUT GENERALE (FIX CENTRATURA GLOBALE) */
+/* LAYOUT - VERSIONE DEFINITIVA              */
 /* ========================================= */
 
 /* ARTICOLI */
 .layout--single .initial-content {
-  max-width: 950px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -19,14 +19,14 @@
   margin: 0 auto;
 }
 
-/* HOMEPAGE (IMPORTANTE per hero) */
+/* HOMEPAGE (LASCIATA LARGA) */
 .layout--splash .initial-content {
-  max-width: NONE;   /* 👈 QUESTO è il FIX CHIAVE */
+  max-width: none; /* ✅ FIX corretto */
 }
 
 /* BLOG / ARCHIVE */
 .layout--archive .initial-content {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -102,4 +102,3 @@
   margin: 0 10px;
   text-decoration: none;
 }
-``
