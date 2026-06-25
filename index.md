@@ -6,7 +6,7 @@ header:
   overlay_filter: 0
   actions:
     - label: "Scopri gli articoli"
-      url: "/categories/"
+      url: "/blog/"
 ---
 
 
