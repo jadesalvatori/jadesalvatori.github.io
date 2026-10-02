@@ -5,17 +5,10 @@ permalink: /about/
 ---
 
 
-Cloudmetrix è una società specializzata nella progettazione e gestione di infrastrutture digitali e piattaforme dati, con l’obiettivo di supportare le aziende nel valorizzare al massimo il proprio patrimonio informativo.
+Ciao a tutti, mi chiamo Giada Salvatori. Nell'ottobre 2018 mi sono laureata in Informatica per il Management all'Università di Bologna e ho iniziato il mio percorso professionale nel settore IT.
 
-Operiamo in contesti enterprise, dove sicurezza, scalabilità e performance rappresentano requisiti fondamentali, affiancando i clienti nella realizzazione e nell’evoluzione di soluzioni data-driven basate su cloud, analytics e Intelligenza Artificiale.
+Durante l'università, il corso di Basi di Dati è stato un punto di svolta. Mi ha fatto capire come i dati siano alla base dei processi decisionali, degli studi e delle analisi statistiche, e quanto conti scegliere il modo giusto di conservarli in base all'uso che se ne deve fare.
 
-Le nostre competenze coprono l’intero ecosistema dei dati:
-- progettazione e ottimizzazione di database (SQL Server, PostgreSQL)
-- sviluppo di Data Platform moderne e scalabili
-- integrazione e gestione dei flussi dati
-- Business Intelligence e Data Analysis
-- automazione e soluzioni basate su AI
+Nel 2018 ho iniziato come Help Desk in un'azienda di consulenza a Modena. È stata un'esperienza che mi ha dato una solida base tecnica e mi ha permesso di crescere in modo trasversale, lavorando su molte delle tecnologie disponibili sul mercato, fino a specializzarmi come Database Administrator nel 2021.
 
-Adottiamo un approccio end-to-end che ci consente di seguire ogni fase del ciclo di vita del dato, dalla raccolta e governance fino all’analisi e all’ottimizzazione continua.
-
-Il nostro obiettivo è trasformare dati complessi in insight concreti e azionabili, abilitando decisioni più consapevoli e generando valore reale per il business.
+Il mio primo approccio al mondo dei database è stato con SQL Server, ma negli ultimi anni mi sono appassionata a PostgreSQL, un database che sta conquistando sempre più spazio sul mercato. Naturalmente nel mio percorso non poteva mancare l'Intelligenza Artificiale, che cerco di applicare al mio campo senza abusarne.
